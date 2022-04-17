@@ -3,6 +3,7 @@ FROM ghcr.io/hammady/butt:latest AS butt-image
 FROM ghcr.io/bitfocus/companion/companion:beta
 COPY --from=butt-image /usr/local/bin/butt-client /usr/local/bin/butt-client
 # TODO remove this layer when butt 0.1.34 is released
+USER root
 RUN apt-get update && \
     apt-get install -y \
     libfltk1.3-dev \
@@ -15,3 +16,4 @@ RUN apt-get update && \
     libdbus-1-dev \
     libsamplerate0-dev \
     libssl-dev
+USER node

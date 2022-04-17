@@ -3,7 +3,8 @@ FROM ghcr.io/hammady/butt:latest AS butt-image
 FROM ghcr.io/bitfocus/companion/companion:beta
 COPY --from=butt-image /usr/local/bin/butt-client /usr/local/bin/butt-client
 # TODO remove this layer when butt 0.1.34 is released
-RUN apt-get install -y \
+RUN apt-get update && \
+    apt-get install -y \
     libfltk1.3-dev \
     portaudio19-dev \
     libopus-dev \

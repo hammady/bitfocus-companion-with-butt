@@ -1,6 +1,6 @@
 # bitfocus-companion-with-butt
 
-[![Docker](https://github.com/hammady/bitfocus-companion-with-butt/workflows/Docker/badge.svg)](https://github.com/hammady/companion/actions/workflows/docker-build-push.yml)
+[![Docker](https://github.com/hammady/bitfocus-companion-with-butt/workflows/Docker/badge.svg)](https://github.com/hammady/bitfocus-companion-with-butt/actions/workflows/docker-build-push.yml)
 
 Docker for [Bitfocus Companion](https://github.com/bitfocus/companion)
 with the butt-client binary.
